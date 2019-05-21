@@ -22,7 +22,7 @@ client.query("SELECT * FROM famous_people WHERE first_name=$1 OR last_name=$1", 
         console.log("ERR:", err)
         return false
     }
-    console.log(res.rows)
+    console.log(query)
     client.end()
 })
 

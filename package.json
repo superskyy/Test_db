@@ -1,0 +1,19 @@
+{
+  "name": "test_db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lookup_people.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superskyy/Test_db.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superskyy/Test_db/issues"
+  },
+  "homepage": "https://github.com/superskyy/Test_db#readme"
+}
