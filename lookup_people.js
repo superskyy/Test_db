@@ -22,14 +22,14 @@ client.query("SELECT * FROM famous_people WHERE first_name=$1 OR last_name=$1", 
         console.log("ERR:", err)
         return false
     }
-    
+    console.log(
+    		`Searching... 
+    	Found ${res.rows.length} person(s) by the name '${query}': `)
     for (i in res.rows) {
     	let j = 0;
-    	j++
-    	console.log(
-    		`Searching... 
-    	Found ${res.rows.length} person(s) by the name '${query}': 
-    	- ${j} ${res.rows[i].first_name} ${res.rows[i].last_name}, born '${res.rows[i].birthdate}'`)
+    	j++;
+    	console.log(`
+    	- ${j +1} ${res.rows[i].first_name} ${res.rows[i].last_name}, born '${res.rows[i].birthdate}'`)
     }
     client.end()
 })
