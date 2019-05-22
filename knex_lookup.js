@@ -18,7 +18,7 @@ knex.select('*').from('famous_people').where({first_name :  query}).asCallback((
     for (i in res) {
     	
     	console.log(
-    	`- ${Number(i) + 1} ${res[i].first_name} ${res[i].last_name}, born '${res[i].birthdate}'`)
+    	`- ${Number(i) + 1} ${res[i].first_name} ${res[i].last_name}, born '${res[i].birthdate.toLocaleString()}'`)
     }
     knex.destroy();
 })
